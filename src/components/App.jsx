@@ -7,6 +7,8 @@ import Footer from './Footer';
 import Header from './Header';
 import Hero from './Hero';
 import MindMap from './MindMap';
+import MindMapMobile from './MindMapMobile';
+import MediaQuery from 'react-responsive';
 
 function App() {
   return (
@@ -15,7 +17,13 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <MindMap />
+      <MediaQuery maxWidth={768}>
+        <MindMapMobile />
+      </MediaQuery>
+      <MediaQuery minWidth={768}>
+        <MindMap />
+      </MediaQuery>
+
       <Faq />
       <Arts />
       <Footer />

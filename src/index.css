@@ -82,7 +82,6 @@
 body {
   margin: 0;
   font-family: 'Right Grotesk', sans-serif;
-  font-weight: 900;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-background-primary);
@@ -144,4 +143,9 @@ a {
     padding-left: 204px;
     padding-right: 204px;
   }
+}
+
+/* swiper */
+
+.mySwiper {
 }

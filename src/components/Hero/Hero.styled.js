@@ -14,12 +14,21 @@ export const SectionHero = styled.section`
   align-items: center;
   margin: 0 auto;
 
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
+
   h1 {
     text-align: center;
     font-weight: 400;
     line-height: 1.69;
     font-family: 'Biro Script Plus', sans-serif;
     color: var(--color-text-secondary);
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.65;
+      text-align: left;
+    }
 
     > span {
       text-align: center;
@@ -28,11 +37,30 @@ export const SectionHero = styled.section`
       line-height: 1;
       font-family: 'Right Grotesk', sans-serif;
       letter-spacing: 0.01em;
+      @media (min-width: 768px) {
+        font-size: 92px;
+        text-align: justify;
+        word-spacing: 155px;
+      }
+      @media (min-width: 1280px) {
+        font-size: 164px;
+        word-spacing: 240px;
+      }
     }
   }
 
   div {
     position: relative;
+  }
+`;
+
+export const ContainerBox = styled.div`
+  @media screen and (min-width: 768px) {
+    position: relative
+    max-width: 768px;
+    padding-top: 124px;
+    padding-left: 88px;
+    padding-right: 88px;
   }
 `;
 
