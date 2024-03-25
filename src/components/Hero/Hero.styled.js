@@ -56,7 +56,7 @@ export const SectionHero = styled.section`
 
 export const ContainerBox = styled.div`
   @media screen and (min-width: 768px) {
-    position: relative
+    position: relative;
     max-width: 768px;
     padding-top: 124px;
     padding-left: 88px;
