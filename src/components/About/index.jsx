@@ -26,7 +26,7 @@ function About() {
       </BoxStyled>
 
       <TextBox>
-        <svg width={24} height={24}>
+        <svg>
           <use href={`${sprite}#icon-x`}></use>
         </svg>
         <p>

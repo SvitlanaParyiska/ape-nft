@@ -134,6 +134,16 @@ export const TextBox = styled.div`
       line-height: 1.21;
     }
   }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 1280px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
 `;
 
 export const AboutUsImg = styled.img`
