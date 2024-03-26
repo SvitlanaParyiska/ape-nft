@@ -1,4 +1,9 @@
-import { ArtsSection, StyledImage } from './Arts.styled';
+import {
+  ArtsSection,
+  ButtonBox,
+  ButtonStyled,
+  StyledImage,
+} from './Arts.styled';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -19,7 +24,10 @@ function Arts() {
       <Swiper
         className="swiper-box"
         spaceBetween={24}
-        navigation={true}
+        navigation={{
+          nextEl: '#next_slide',
+          prevEl: '#prev_slide',
+        }}
         breakpoints={{
           360: {
             slidesPerView: 1.5,
@@ -57,6 +65,10 @@ function Arts() {
         <SwiperSlide>
           <StyledImage src={slide7} alt="slide 7" />
         </SwiperSlide>
+        <ButtonBox>
+          <ButtonStyled id="prev_slide">Prev</ButtonStyled>
+          <ButtonStyled id="next_slide">Next</ButtonStyled>
+        </ButtonBox>
       </Swiper>
     </ArtsSection>
   );

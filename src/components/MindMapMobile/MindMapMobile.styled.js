@@ -65,3 +65,19 @@ export const CardStyledRed = styled.div`
     }
   }
 `;
+
+export const ButtonBox = styled.div`
+  margin-top: 24px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+`;
+export const ButtonStyled = styled.button`
+  font-family: 'Biro Script Plus', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+`;

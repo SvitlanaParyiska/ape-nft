@@ -3,6 +3,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {
+  ButtonBox,
+  ButtonStyled,
   CardStyled,
   CardStyledRed,
   SectionStyled,
@@ -18,7 +20,10 @@ function MindMapMobile() {
         spaceBetween={24}
         slidesPerView={1.5}
         centeredSlides={true}
-        navigation={true}
+        navigation={{
+          nextEl: '#next_slide',
+          prevEl: '#prev_slide',
+        }}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -61,6 +66,10 @@ function MindMapMobile() {
             </a>
           </CardStyledRed>
         </SwiperSlide>
+        <ButtonBox>
+          <ButtonStyled id="prev_slide">Prev</ButtonStyled>
+          <ButtonStyled id="next_slide">Next</ButtonStyled>
+        </ButtonBox>
       </Swiper>
     </SectionStyled>
   );
