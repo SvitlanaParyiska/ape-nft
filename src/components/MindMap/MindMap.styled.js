@@ -16,6 +16,10 @@ export const MindSection = styled.section`
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (min-width: 1440px) {
+      gap: 48px;
+    }
   }
 `;
 
@@ -38,7 +42,7 @@ export const CardStyled = styled.li`
     text-transform: uppercase;
     margin-left: auto;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1280px) {
       width: 256px;
       line-height: 1.21;
       font-size: 24px;
@@ -51,11 +55,16 @@ export const CardStyled = styled.li`
     line-height: 1;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1280px) {
       font-size: 64px;
     }
   }
 
+  @media screen and (min-width: 1280px) {
+    border-radius: 24px;
+    width: 504px;
+    height: 480px;
+  }
   @media screen and (min-width: 1440px) {
     border-radius: 24px;
     width: 560px;
@@ -88,11 +97,10 @@ export const CardStyledRed = styled.li`
       text-transform: uppercase;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1280px) {
       border-radius: 24px;
-      width: 560px;
+      width: 504px;
       height: 480px;
-
       > svg {
         width: 64px;
         height: 64px;
@@ -100,6 +108,10 @@ export const CardStyledRed = styled.li`
       > h3 {
         font-size: 64px;
       }
+    }
+    @media screen and (min-width: 1440px) {
+      width: 560px;
+      height: 480px;
     }
   }
 `;

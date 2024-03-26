@@ -139,43 +139,48 @@ export const ImageHero = styled.img`
   }
 `;
 
-export const ButtonStyled = styled.button`
-  position: absolute;
-  bottom: -37px;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.19;
-  font-family: inherit;
-  color: #1e1e1e;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 70px 12px 70px;
-  width: 216px;
-  height: 41px;
-  backdrop-filter: blur(12px);
-  background-color: rgba(30, 30, 30, 0.1);
+export const ButtonStyled = styled.a`
 
-  @media screen and (min-width: 768px) {
-    border-radius: 12px;
-    padding: 10px 61px 12px 61px;
-    width: 190px;
-    right: 72px;
-    bottom: 35px;
-  }
+    position: absolute;
+    bottom: -37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.19;
+    font-family: 'Right Grotesk', sans-serif;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 70px 12px 70px;
+    width: 216px;
+    height: 41px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(30, 30, 30, 0.1);
 
-  @media screen and (min-width: 1280px) {
-    font-size: 28px;
-    line-height: 1.21;
-    right: 120px;
-    bottom: 111px;
-    width: 337px;
-    height: 70px;
-  }
+    @media screen and (min-width: 768px) {
+      border-radius: 12px;
+      padding: 10px 61px 12px 61px;
+      width: 190px;
+      right: 72px;
+      bottom: 35px;
+    }
 
-  @media screen and (min-width: 1440px) {
-    right: 112px;
-    bottom: 81px;
-  }
+    @media screen and (min-width: 1280px) {
+      font-size: 28px;
+      line-height: 1.21;
+      right: 120px;
+      bottom: 111px;
+      width: 337px;
+      height: 70px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      right: 112px;
+      bottom: 81px;
+    }
+
 `;
 export const TextHero = styled.p`
   width: 217px;

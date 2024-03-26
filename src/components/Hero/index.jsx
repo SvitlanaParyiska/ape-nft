@@ -36,7 +36,7 @@ function Hero() {
               />
               <ImageHero src={heroImages.mobile[0]} alt="Monkey" />
             </picture>
-            <ButtonStyled>MEET APES</ButtonStyled>
+            <ButtonStyled href="#mint">MEET APES</ButtonStyled>
           </ImageBox>
           <TextHero>
             Yacht Ape is a collection of unique digital apes that you can own in

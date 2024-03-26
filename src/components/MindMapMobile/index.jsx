@@ -18,7 +18,7 @@ function MindMapMobile() {
         spaceBetween={24}
         slidesPerView={1.5}
         centeredSlides={true}
-        navigation
+        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide>

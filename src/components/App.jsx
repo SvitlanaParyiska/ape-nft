@@ -9,6 +9,7 @@ import Hero from './Hero';
 import MindMap from './MindMap';
 import MindMapMobile from './MindMapMobile';
 import MediaQuery from 'react-responsive';
+import ContactUs from './ContactUs';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
       <Faq />
       <Arts />
+      <ContactUs />
       <Footer />
     </>
   );
