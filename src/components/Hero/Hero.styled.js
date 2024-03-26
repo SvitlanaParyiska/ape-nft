@@ -156,8 +156,25 @@ export const ButtonStyled = styled.button`
   background-color: rgba(30, 30, 30, 0.1);
 
   @media screen and (min-width: 768px) {
+    border-radius: 12px;
+    padding: 10px 61px 12px 61px;
+    width: 190px;
     right: 72px;
     bottom: 35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 28px;
+    line-height: 1.21;
+    right: 120px;
+    bottom: 111px;
+    width: 337px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    right: 112px;
+    bottom: 81px;
   }
 `;
 export const TextHero = styled.p`
