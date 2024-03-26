@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeaderStyled = styled.header`
   width: 100%;
   position: fixed;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 62px 16px 0 16px;
@@ -11,9 +12,9 @@ export const HeaderStyled = styled.header`
     padding: 66px 28px 0 28px;
   }
 
-  /* @media (min-width: 1440px) {
-    padding: 16px 16px 0 16px;
-  } */
+  @media (min-width: 1440px) {
+    padding: 40px 40px 0 40px;
+  }
 `;
 
 export const LogoSvg = styled.svg`

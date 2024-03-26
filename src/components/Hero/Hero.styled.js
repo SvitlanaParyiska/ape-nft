@@ -24,6 +24,8 @@ export const SectionHero = styled.section`
 
   @media (min-width: 768px) {
     align-items: flex-start;
+    height: 421px;
+    position: relative;
   }
 
   h1 {
@@ -36,6 +38,11 @@ export const SectionHero = styled.section`
       font-size: 20px;
       line-height: 1.65;
       text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 24px;
+      line-height: 1.67;
     }
 
     > span {
@@ -56,19 +63,23 @@ export const SectionHero = styled.section`
       }
     }
   }
+`;
 
-  div {
-    position: relative;
+export const ImageBox = styled.div`
+  position: relative;
+  @media screen and (min-width: 768px) {
+    position: static;
   }
 `;
 
 export const ContainerBox = styled.div`
   @media screen and (min-width: 768px) {
-    position: relative;
-    max-width: 768px;
+    width: 768px;
     padding-top: 124px;
     padding-left: 88px;
     padding-right: 88px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -76,6 +87,13 @@ export const ImageHero = styled.img`
   width: 216px;
   height: 284px;
   margin-top: 6px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 29px;
+    left: calc((100% - 176px) / 2.5);
+    width: 283px;
+    height: 386px;
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -93,6 +111,11 @@ export const ButtonStyled = styled.button`
   height: 41px;
   backdrop-filter: blur(12px);
   background-color: rgba(30, 30, 30, 0.1);
+
+  @media screen and (min-width: 768px) {
+    right: 72px;
+    bottom: 35px;
+  }
 `;
 export const TextHero = styled.p`
   width: 217px;

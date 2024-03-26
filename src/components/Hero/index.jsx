@@ -2,6 +2,7 @@ import {
   ButtonStyled,
   ContainerBox,
   ContainerHero,
+  ImageBox,
   ImageHero,
   SectionHero,
   TextHero,
@@ -18,7 +19,7 @@ function Hero() {
             <span>YACHT APES</span>
           </h1>
           <h1>Apes aRe eveRywhere</h1>
-          <div>
+          <ImageBox>
             <picture>
               <source
                 srcSet={`${heroImages.desktop[0]} 1x,${heroImages.desktop[1]} 2x`}
@@ -35,7 +36,7 @@ function Hero() {
               <ImageHero src={heroImages.mobile[0]} alt="Monkey" />
             </picture>
             <ButtonStyled>MEET APES</ButtonStyled>
-          </div>
+          </ImageBox>
           <TextHero>
             Yacht Ape is a collection of unique digital apes that you can own in
             NFT format
