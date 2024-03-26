@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://svitlanaparyiska.github.io/ape-nft/"><img src="./public/favicon-32x32.png" alt="ape-nft" width="200"></a>
+  <a href="https://svitlanaparyiska.github.io/ape-nft/"><img src="./public/android-chrome-512x512.png" alt="ape-nft" width="200"></a>
   <br>
 Ape NFT
   <br>
