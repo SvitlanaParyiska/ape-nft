@@ -1,22 +1,30 @@
-import { AboutUsImg, SectionAbout, TextBox } from './About.styled';
+import {
+  AboutUsImg,
+  SectionAbout,
+  TextBox,
+  BoxStyled,
+  StyledSpan,
+} from './About.styled';
 import sprite from '../../images/sprite.svg';
 import { aboutUsImages } from '../../helpers/imagesHelper';
 
 function About() {
   return (
     <SectionAbout className="container">
-      <h2>
-        a story that started with
-        <span>
-          {' '}
-          one simple <br />
-          ape
-        </span>
-      </h2>
-      <p>
-        WHO GOT <br /> FED UP WITH BORING AND HYPOCRITIC COMMONPLACE THIS IS HOW
-        THE IDEA OF ESCAPING AND DYNAMIC JOURNEY ON THE YACHT
-      </p>
+      <BoxStyled>
+        <h2>
+          a story that started{' '}
+          <StyledSpan>
+            with
+            <span> one simple ape</span>
+          </StyledSpan>
+        </h2>
+        <p>
+          WHO GOT FED UP WITH BORING AND HYPOCRITIC COMMONPLACE THIS IS HOW THE
+          IDEA OF ESCAPING AND DYNAMIC <span>JOURNEY ON THE YACHT</span>
+        </p>
+      </BoxStyled>
+
       <TextBox>
         <svg width={24} height={24}>
           <use href={`${sprite}#icon-x`}></use>

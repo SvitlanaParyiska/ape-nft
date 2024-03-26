@@ -140,6 +140,13 @@ a {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1440px;
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
     padding-left: 204px;
     padding-right: 204px;
   }
