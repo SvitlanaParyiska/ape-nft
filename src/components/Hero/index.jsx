@@ -6,6 +6,7 @@ import {
   ImageHero,
   SectionHero,
   TextHero,
+  TitleStyled,
 } from './Hero.styled';
 import { heroImages } from '../../helpers/imagesHelper';
 
@@ -18,7 +19,7 @@ function Hero() {
           <h1>
             <span>YACHT APES</span>
           </h1>
-          <h1>Apes aRe eveRywhere</h1>
+          <TitleStyled>Apes aRe eveRywhere</TitleStyled>
           <ImageBox>
             <picture>
               <source

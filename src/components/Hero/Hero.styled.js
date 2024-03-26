@@ -13,7 +13,7 @@ export const ContainerHero = styled.div`
 `;
 
 export const SectionHero = styled.section`
-  padding-top: 36px;
+  /* padding-top: 36px; */
   padding-bottom: 19px;
   background-color: var(--color-accent);
   border-radius: 12px;
@@ -27,6 +27,12 @@ export const SectionHero = styled.section`
     height: 421px;
     position: relative;
   }
+  @media (min-width: 1280px) {
+    height: 677px;
+  }
+  @media (min-width: 1440px) {
+    height: 720px;
+  }
 
   h1 {
     text-align: center;
@@ -34,13 +40,14 @@ export const SectionHero = styled.section`
     line-height: 1.69;
     font-family: 'Biro Script Plus', sans-serif;
     color: var(--color-text-secondary);
+
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 1.65;
       text-align: left;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1280px) {
       font-size: 24px;
       line-height: 1.67;
     }
@@ -55,13 +62,23 @@ export const SectionHero = styled.section`
       @media (min-width: 768px) {
         font-size: 92px;
         text-align: justify;
-        word-spacing: 155px;
+        word-spacing: 130px;
       }
       @media (min-width: 1280px) {
         font-size: 164px;
+        word-spacing: 215px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 188px;
         word-spacing: 240px;
       }
     }
+  }
+`;
+
+export const TitleStyled = styled.h1`
+  @media screen and (min-width: 1280px) {
+    margin-left: 150px;
   }
 `;
 
@@ -74,12 +91,23 @@ export const ImageBox = styled.div`
 
 export const ContainerBox = styled.div`
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding-top: 124px;
-    padding-left: 88px;
-    padding-right: 88px;
+    padding-left: 72px;
+    padding-right: 72px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 197px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 182px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 `;
 
@@ -87,12 +115,27 @@ export const ImageHero = styled.img`
   width: 216px;
   height: 284px;
   margin-top: 6px;
+
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 29px;
-    left: calc((100% - 176px) / 2.5);
+    left: calc((100% - 260px) / 2.25);
     width: 283px;
     height: 386px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 59px;
+    left: calc((100% - 450px) / 2.25);
+    width: 463px;
+    height: 612px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 39px;
+    left: calc((100% - 450px) / 2.25);
+    width: 511px;
+    height: 675px;
   }
 `;
 
@@ -128,4 +171,19 @@ export const TextHero = styled.p`
   text-transform: uppercase;
   text-align: center;
   color: #1e1e1e;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-top: -20px;
+    text-indent: 90px;
+    width: 190px;
+    text-align: justify;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.19;
+    text-indent: 80px;
+    width: 337px;
+  }
 `;
