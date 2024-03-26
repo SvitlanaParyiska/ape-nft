@@ -1,8 +1,10 @@
+import { ContactUsSection } from './ContactUs.styled';
+
 function ContactUs() {
   return (
-    <div>
+    <ContactUsSection className="container">
       <h2 id="mint">Are you in?</h2>
-    </div>
+    </ContactUsSection>
   );
 }
 

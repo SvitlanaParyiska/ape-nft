@@ -19,7 +19,6 @@ function Arts() {
       <Swiper
         className="swiper-box"
         spaceBetween={24}
-        centeredSlides={true}
         navigation={true}
         breakpoints={{
           360: {
