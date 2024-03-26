@@ -50,13 +50,15 @@ function MindMapMobile() {
         </SwiperSlide>
         <SwiperSlide>
           <CardStyledRed>
-            <svg width={48} height={48}>
-              <use href={`${sprite}#icon-up-left`} />
-            </svg>
-            <h3>
-              Learn <br /> more <br />
-              in mind map
-            </h3>
+            <a href="#a" aria-label="link to learn more">
+              <svg width={48} height={48}>
+                <use href={`${sprite}#icon-up-left`} />
+              </svg>
+              <h3>
+                Learn <br /> more <br />
+                in mind map
+              </h3>
+            </a>
           </CardStyledRed>
         </SwiperSlide>
       </Swiper>

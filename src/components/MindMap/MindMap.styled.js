@@ -64,33 +64,42 @@ export const CardStyled = styled.li`
 `;
 
 export const CardStyledRed = styled.li`
-  border-radius: 16px;
-  padding: 24px;
-  width: 284px;
-  height: 242px;
-  background-color: #dc3b5a;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  a {
+    color: inherit;
+    border-radius: 16px;
+    padding: 24px;
+    width: 284px;
+    height: 242px;
+    background-color: #dc3b5a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  > svg {
-    display: block;
-    margin-left: auto;
-  }
-  > h3 {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-
-  @media screen and (min-width: 1440px) {
-    border-radius: 24px;
-    width: 560px;
-    height: 480px;
-
+    > svg {
+      display: block;
+      margin-left: auto;
+      width: 48px;
+      height: 48px;
+    }
     > h3 {
-      font-size: 64px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1440px) {
+      border-radius: 24px;
+      width: 560px;
+      height: 480px;
+
+      > svg {
+        width: 64px;
+        height: 64px;
+      }
+      > h3 {
+        font-size: 64px;
+      }
     }
   }
 `;

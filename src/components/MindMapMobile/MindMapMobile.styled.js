@@ -42,23 +42,26 @@ export const CardStyled = styled.div`
 `;
 
 export const CardStyledRed = styled.div`
-  max-width: 216px;
-  height: 242px;
-  border-radius: 12px;
-  padding: 24px 12px;
-  background-color: #dc3b5a;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  > a {
+    color: inherit;
+    max-width: 216px;
+    height: 242px;
+    border-radius: 12px;
+    padding: 24px 12px;
+    background-color: #dc3b5a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-  > svg {
-    display: block;
-    margin-left: auto;
-  }
-  > h3 {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1;
-    text-transform: uppercase;
+    > svg {
+      display: block;
+      margin-left: auto;
+    }
+    > h3 {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
   }
 `;

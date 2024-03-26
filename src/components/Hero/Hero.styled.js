@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 export const ContainerHero = styled.div`
   padding: 54px 8px 0 8px;
+
+  @media (min-width: 768px) {
+    padding: 54px 16px 0 16px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 16px 16px 0 16px;
+  }
 `;
 
 export const SectionHero = styled.section`
