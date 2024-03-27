@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const ContactUsSection = styled.section`
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h2 {
     margin-bottom: 24px;

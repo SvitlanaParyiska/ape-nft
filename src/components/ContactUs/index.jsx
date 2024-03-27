@@ -1,5 +1,6 @@
 import { ContactUsSection, TextBox } from './ContactUs.styled';
 import sprite from '../../images/sprite.svg';
+import ContactForm from 'components/ContactForm';
 
 function ContactUs() {
   return (
@@ -14,6 +15,7 @@ function ContactUs() {
           limited edition NFT
         </p>
       </TextBox>
+      <ContactForm />
     </ContactUsSection>
   );
 }
