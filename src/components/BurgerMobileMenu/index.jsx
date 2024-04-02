@@ -1,22 +1,25 @@
 import { useEffect } from 'react';
-import { BoxMobileStyled, NavListStyled } from './BurgerMobileMenu.styled';
+import {
+  BoxIndexStyled,
+  BoxMobileStyled,
+  NavListStyled,
+} from './BurgerMobileMenu.styled';
+import { createPortal } from 'react-dom';
 
-function BurgerMobileMenu({ onClick }) {
+const modalRoot = document.querySelector('#modal-root');
+
+function BurgerMobileMenu({ onToggleClick }) {
   useEffect(() => {
     const handleKeyDown = e => {
       if (e.code === 'Escape') {
-        onClick();
+        onToggleClick();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onClick]);
-
-  //   const handleCloseClick = () => {
-  //     onClick();
-  //   };
+  }, [onToggleClick]);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -26,51 +29,40 @@ function BurgerMobileMenu({ onClick }) {
     };
   }, []);
 
-  return (
+  return createPortal(
     <BoxMobileStyled>
-      {/* <a href="/ape-nft" aria-label="link to page">
-        <LogoSvg>
-          <use href={`${sprite}#icon-logo`} />
-        </LogoSvg>
-      </a> */}
-
-      <NavListStyled>
-        {/* <li>
-            <ButtonClose
-              type="button"
-              aria-label="Close menu"
-              onClick={handleCloseClick}
-            >
-              Close
-            </ButtonClose>
-          </li> */}
-        <li>
-          <a aria-label="Link to shopping cart page" href="#about">
-            ABOUT
-          </a>
-        </li>
-        <li>
-          <a aria-label="Link to favorites page" href="#mindmap">
-            MIND-MAP
-          </a>
-        </li>
-        <li>
-          <a aria-label="Link to history page" href="#faq">
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a aria-label="Link to history page" href="#arts">
-            ARTS
-          </a>
-        </li>
-        <li>
-          <a aria-label="Link to history page" href="#mint">
-            MINT
-          </a>
-        </li>
-      </NavListStyled>
-    </BoxMobileStyled>
+      <BoxIndexStyled>
+        <NavListStyled>
+          <li>
+            <a aria-label="Link to shopping cart page" href="#about">
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link to favorites page" href="#mindmap">
+              MIND-MAP
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link to history page" href="#faq">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link to history page" href="#arts">
+              ARTS
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link to history page" href="#mint">
+              MINT
+            </a>
+          </li>
+        </NavListStyled>
+      </BoxIndexStyled>
+      <p>© Yacht ape 2024 all rights reserved</p>
+    </BoxMobileStyled>,
+    modalRoot
   );
 }
 

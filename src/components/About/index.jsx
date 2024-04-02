@@ -12,7 +12,7 @@ function About() {
   return (
     <SectionAbout className="container">
       <BoxStyled>
-        <h2>
+        <h2 id="about">
           a story that started{' '}
           <StyledSpan>
             with

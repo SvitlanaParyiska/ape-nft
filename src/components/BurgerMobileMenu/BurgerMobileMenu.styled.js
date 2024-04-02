@@ -12,6 +12,29 @@ export const BoxMobileStyled = styled.div`
   background-color: #181818;
   padding-top: 109px;
   padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  p {
+    width: 216px;
+    font-family: 'Messina Sans Mono', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }
+`;
+
+export const BoxIndexStyled = styled.div`
+  position: absolute;
+  z-index: 120;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
 `;
 
 export const LogoSvg = styled.svg`
@@ -20,25 +43,6 @@ export const LogoSvg = styled.svg`
   margin-top: 8px;
   fill: #fff;
 `;
-
-// export const ButtonClose = styled.button`
-//   position: absolute;
-//   border: none;
-//   width: 24px;
-//   height: 24px;
-//   stroke: white;
-//   top: 19px;
-//   right: 20px;
-//   background-color: transparent;
-//   cursor: pointer;
-
-//   @media screen and (min-width: 768px) {
-//     top: 24px;
-//     right: 32px;
-//     width: 32px;
-//     height: 32px;
-//   }
-// `;
 
 export const NavListStyled = styled.ul`
   display: flex;

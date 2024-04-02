@@ -14,7 +14,7 @@ import sprite from '../../images/sprite.svg';
 function MindMapMobile() {
   return (
     <SectionStyled>
-      <h2>Mind map</h2>
+      <h2 id="mindmap">Mind map</h2>
       <Swiper
         modules={[Navigation]}
         spaceBetween={24}

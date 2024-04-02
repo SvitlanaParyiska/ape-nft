@@ -4,7 +4,7 @@ import sprite from '../../images/sprite.svg';
 function MindMap() {
   return (
     <MindSection className="container">
-      <h2>Mind map</h2>
+      <h2 id="mindmap">Mind map</h2>
       <ul>
         <CardStyled>
           <p>
@@ -32,7 +32,7 @@ function MindMap() {
 
         <CardStyledRed>
           <a href="#a" aria-label="link to learn more">
-            <svg >
+            <svg>
               <use href={`${sprite}#icon-up-left`} />
             </svg>
             <h3>

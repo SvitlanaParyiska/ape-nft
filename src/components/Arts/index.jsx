@@ -20,7 +20,7 @@ import slide7 from '../../images/slide7.jpg';
 function Arts() {
   return (
     <ArtsSection>
-      <h2>COLLECTION</h2>
+      <h2 id="arts">COLLECTION</h2>
       <Swiper
         className="swiper-box"
         spaceBetween={24}

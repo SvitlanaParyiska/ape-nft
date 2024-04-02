@@ -63,6 +63,11 @@ function Header() {
         <MediaQuery maxWidth={767}>
           <LinkHeaderStyled
             color={isWhiteColor ? '#fff' : '#1e1e1e'}
+            $bgcolor={
+              isWhiteColor
+                ? 'rgba(255, 255, 255, 0.1)'
+                : ' rgba(30, 30, 30, 0.1)'
+            }
             href="#a"
             aria-label="link to menu"
             onClick={toggleMobileMenu}
@@ -71,23 +76,34 @@ function Header() {
           </LinkHeaderStyled>
         </MediaQuery>
         <MediaQuery maxWidth={767}>
-          {isMobileMenuOpen && <BurgerMobileMenu onClick={toggleMobileMenu} />}
+          {isMobileMenuOpen && (
+            <BurgerMobileMenu onToggleClick={toggleMobileMenu} />
+          )}
         </MediaQuery>
         <MediaQuery minWidth={768}>
-          <LinkHeaderStyled
-            color={isWhiteColor ? '#fff' : '#1e1e1e'}
-            href="#a"
-            aria-label="link to menu"
-            onClick={toggleMenu}
-          >
-            MENU
-          </LinkHeaderStyled>
-        </MediaQuery>
-        <MediaQuery minWidth={768}>
-          {isMenuOpen && <BurgerMenu onClick={toggleMobileMenu} />}
+          {isMenuOpen ? (
+            <BurgerMenu onToggleClick={toggleMenu} />
+          ) : (
+            <LinkHeaderStyled
+              color={isWhiteColor ? '#fff' : '#1e1e1e'}
+              $bgcolor={
+                isWhiteColor
+                  ? 'rgba(255, 255, 255, 0.1)'
+                  : ' rgba(30, 30, 30, 0.1)'
+              }
+              href="#a"
+              aria-label="link to menu"
+              onClick={toggleMenu}
+            >
+              MENU
+            </LinkHeaderStyled>
+          )}
         </MediaQuery>
         <LinkHeaderStyled
           color={isWhiteColor ? '#fff' : '#1e1e1e'}
+          $bgcolor={
+            isWhiteColor ? 'rgba(255, 255, 255, 0.1)' : ' rgba(30, 30, 30, 0.1)'
+          }
           href="#a"
           aria-label="link to Discord"
         >
@@ -97,6 +113,9 @@ function Header() {
         </LinkHeaderStyled>
         <LinkHeaderStyled
           color={isWhiteColor ? '#fff' : '#1e1e1e'}
+          $bgcolor={
+            isWhiteColor ? 'rgba(255, 255, 255, 0.1)' : ' rgba(30, 30, 30, 0.1)'
+          }
           href="#a"
           aria-label="link to Logomark"
         >
@@ -106,6 +125,9 @@ function Header() {
         </LinkHeaderStyled>
         <LinkHeaderStyled
           color={isWhiteColor ? '#fff' : '#1e1e1e'}
+          $bgcolor={
+            isWhiteColor ? 'rgba(255, 255, 255, 0.1)' : ' rgba(30, 30, 30, 0.1)'
+          }
           href="#a"
           aria-label="link to Twitter"
         >

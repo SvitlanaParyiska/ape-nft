@@ -3,7 +3,7 @@ import { FaqSection } from './Faq.styled';
 function Faq() {
   return (
     <FaqSection className="container">
-      <h2>FAQ</h2>
+      <h2 id="faq">FAQ</h2>
       <ul>
         <li>
           <h3>

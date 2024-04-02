@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderStyled = styled.header`
   width: 100%;
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   padding: 62px 16px 0 16px;
@@ -33,7 +33,12 @@ export const LogoSvg = styled.svg`
 export const NavBox = styled.nav`
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 8px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 16px;
+  }
 `;
 
 export const LinkHeaderStyled = styled.a`
@@ -42,7 +47,7 @@ export const LinkHeaderStyled = styled.a`
   width: 48px;
   height: 48px;
   backdrop-filter: blur(12px);
-  background-color: rgba(30, 30, 30, 0.1);
+  background-color: ${props => props.$bgcolor};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +69,7 @@ export const LinkHeaderStyled = styled.a`
   }
 
   @media screen and (min-width: 1280px) {
+    font-size: 16px;
     width: 80px;
     height: 80px;
   }
