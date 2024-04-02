@@ -32,4 +32,4 @@ Your app is ready to be deployed!
 
 [Link to site](https://svitlanaparyiska.github.io/ape-nft/ 'Ape-NFT')
 
-![GitHub ReadMe](./src/images/readmeNFT.PNG)
+![GitHub ReadMe](./src/images/readme.PNG)
