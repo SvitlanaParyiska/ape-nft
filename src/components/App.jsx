@@ -10,6 +10,7 @@ import MindMap from './MindMap';
 import MindMapMobile from './MindMapMobile';
 import MediaQuery from 'react-responsive';
 import ContactUs from './ContactUs';
+import RunString from './RunString';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <RunString />
       <MediaQuery maxWidth={768}>
         <MindMapMobile />
       </MediaQuery>

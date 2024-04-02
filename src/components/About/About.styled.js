@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SectionAbout = styled.section`
   padding-top: 60px;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     display: flex;
@@ -11,7 +12,7 @@ export const SectionAbout = styled.section`
 
   @media screen and (min-width: 768px) {
     padding-top: 80px;
-    position: relative;
+
     height: 628px;
   }
 

@@ -33,27 +33,27 @@ function BurgerMobileMenu({ onToggleClick }) {
     <BoxMobileStyled>
       <BoxIndexStyled>
         <NavListStyled>
-          <li>
+          <li onClick={() => onToggleClick()}>
             <a aria-label="Link to shopping cart page" href="#about">
               ABOUT
             </a>
           </li>
-          <li>
+          <li onClick={() => onToggleClick()}>
             <a aria-label="Link to favorites page" href="#mindmap">
               MIND-MAP
             </a>
           </li>
-          <li>
+          <li onClick={() => onToggleClick()}>
             <a aria-label="Link to history page" href="#faq">
               FAQ
             </a>
           </li>
-          <li>
+          <li onClick={() => onToggleClick()}>
             <a aria-label="Link to history page" href="#arts">
               ARTS
             </a>
           </li>
-          <li>
+          <li onClick={() => onToggleClick()}>
             <a aria-label="Link to history page" href="#mint">
               MINT
             </a>
