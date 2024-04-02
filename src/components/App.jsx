@@ -1,6 +1,5 @@
 import { Toaster } from 'react-hot-toast';
 import About from './About';
-import './App.styled.js';
 import Arts from './Arts';
 import Faq from './Faq';
 import Footer from './Footer';

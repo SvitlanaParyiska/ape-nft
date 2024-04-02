@@ -24,7 +24,6 @@ function About() {
           IDEA OF ESCAPING AND DYNAMIC <span>JOURNEY ON THE YACHT</span>
         </p>
       </BoxStyled>
-
       <TextBox>
         <svg>
           <use href={`${sprite}#icon-x`}></use>
