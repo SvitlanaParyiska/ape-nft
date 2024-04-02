@@ -61,19 +61,35 @@ function Header() {
       </MediaQuery>
       <NavBox>
         <MediaQuery maxWidth={767}>
-          <LinkHeaderStyled
-            color={isWhiteColor ? '#fff' : '#1e1e1e'}
-            $bgcolor={
-              isWhiteColor
-                ? 'rgba(255, 255, 255, 0.1)'
-                : ' rgba(30, 30, 30, 0.1)'
-            }
-            href="#a"
-            aria-label="link to menu"
-            onClick={toggleMobileMenu}
-          >
-            MENU
-          </LinkHeaderStyled>
+          {isMobileMenuOpen ? (
+            <LinkHeaderStyled
+              color={isWhiteColor ? '#fff' : '#1e1e1e'}
+              $bgcolor={
+                isWhiteColor
+                  ? 'rgba(255, 255, 255, 0.1)'
+                  : ' rgba(30, 30, 30, 0.1)'
+              }
+              href="#a"
+              aria-label="link to menu"
+              onClick={toggleMobileMenu}
+            >
+              CLOSE
+            </LinkHeaderStyled>
+          ) : (
+            <LinkHeaderStyled
+              color={isWhiteColor ? '#fff' : '#1e1e1e'}
+              $bgcolor={
+                isWhiteColor
+                  ? 'rgba(255, 255, 255, 0.1)'
+                  : ' rgba(30, 30, 30, 0.1)'
+              }
+              href="#a"
+              aria-label="link to menu"
+              onClick={toggleMobileMenu}
+            >
+              MENU
+            </LinkHeaderStyled>
+          )}
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           {isMobileMenuOpen && (

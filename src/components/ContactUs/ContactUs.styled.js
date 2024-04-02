@@ -57,15 +57,18 @@ export const TextBox = styled.div`
     text-transform: uppercase;
     text-align: center;
     width: 216px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       width: 397px;
+      margin-bottom: 24px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 24px;
       line-height: 1.21;
       width: 581px;
+      margin-bottom: 40px;
     }
   }
 `;
