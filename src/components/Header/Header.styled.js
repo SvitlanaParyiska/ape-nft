@@ -7,6 +7,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 62px 16px 0 16px;
+  pointer-events: none;
 
   @media (min-width: 768px) {
     padding: 66px 28px 0 28px;
@@ -31,6 +32,7 @@ export const LogoSvg = styled.svg`
 `;
 
 export const NavBox = styled.nav`
+  pointer-events: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -42,6 +44,7 @@ export const NavBox = styled.nav`
 `;
 
 export const LinkHeaderStyled = styled.a`
+  pointer-events: auto;
   border-radius: 8px;
   padding: 10px;
   width: 48px;

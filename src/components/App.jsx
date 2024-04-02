@@ -24,7 +24,6 @@ function App() {
       <MediaQuery minWidth={768}>
         <MindMap />
       </MediaQuery>
-
       <Faq />
       <Arts />
       <ContactUs />
